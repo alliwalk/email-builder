@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>
+
+    </title>
+    <meta name="author" content="Allison Walker">
+    <meta name="description" content="Portfolio - Email Builder">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ç
+    <link rel="manifest" href="manifest.webmanifest">
+
+    <!-- CSS ---------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+     <style>
+       /* Adds email address outside the DOM */
+       .connect::after{ content: " hello@alliwalk.com"; }
+
+       .proj-img{
+         background: url(http://mrmrs.github.io/photos/12.jpg) no-repeat center center fixed; background-size: cover;
+         }
+    </style>
+
+  </head>
+  <body class="sans-serif">
+    <nav class="pa3 pa4-ns">
+      <a class="link dim black b f6 f5-ns dib mr3" href="" title="Home">Allison Walker NYC</a>
+      <a class="link dim gray    f6 f5-ns dib mr3" href="#" title="Home">Home</a>
+      <a class="link dim gray    f6 f5-ns dib mr3 dropbtn" href="work.html" title="Work">Work</a>
+
+      <!-- CSS dropdown for Work -->
+      <!-- <span class="dropdown">
+        <a class="link dim gray    f6 f5-ns dib mr3 dropbtn" href="/work/work.html" title="Work">Work</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+      </span> -->
+
+      <a class="link dim gray    f6 f5-ns dib mr3" href="about.html" title="About">About</a>
+      <a class="link dim gray    f6 f5-ns dib" href="#" title="Blog">Blog</a>
+    </nav>
+
+        <!-- Top Section ---------------------------------------------------------------------------------->
+    <main>
+      <!-- <section class="cf pa3 pa2-m pa3-l mw9 center bg-green white"> -->
+        <article data-name="article-full-bleed-background">
+          <div class="cf proj-img">
+            <div class="fl pa3 pa4-ns bg-white black-70 measure-narrow f3">
+              <header class="bb b--black-70 pv4">
+                <h3 class="f2 fw7 lh-title mt0 mb3">Designing Products for SMBs</h3>
+                <h4 class="f3 fw2 lh-title mt0 calisto">Salesgenie and InfoUSA</h4>
+              </header>
+
+              <aside class="pt5 pb4">
+                <p class="lh-copy measure f5 mt0">
+                  As a product designer at Infogroup, I developed the user experience for products used by small and medium businesses to acquire and market to new customers.
+                </p>
+                <!-- <div class="pa2 pa5-ns bg-washed-blue ba"> -->
+                <div class="pv2 pl3-ns pt4-ns pb5-ns bg-navy white">
+                  <!-- <h4 class="f6 fw6">Glossary</h4> -->
+                  <dl class="f6 lh-title mv2">
+                    <dt class="dib b">Product Type:</dt>
+                    <dd class="dib ml0 gray">SaaS, B2B</dd>
+                  </dl>
+                  <dl class="f6 lh-title mv2">
+                    <dt class="dib b">Year:</dt>
+                    <dd class="dib ml0 gray">2014-2015</dd>
+                  </dl>
+                  <dl class="f6 lh-title mv2">
+                    <dt class="dib b">Role:</dt>
+                    <dd class="dib ml0 gray">UX research, Product design, UI design</dd>
+                  </dl>
+                  <!-- <dl class="f6 lh-title mv2">
+                    <dt class="dib b">GB:</dt>
+                    <dd class="dib ml0 gray">Games Back</dd>
+                  </dl>
+                  <dl class="f6 lh-title mv2">
+                    <dt class="dib b">Home:</dt>
+                    <dd class="dib ml0 gray">Home Record</dd>
+                  </dl>
+                  <dl class="f6 lh-title mv2">
+                    <dt class="dib b">Road:</dt>
+                    <dd class="dib ml0 gray">Road Record</dd>
+                  </dl>
+                  <dl class="f6 lh-title mv2">
+                    <dt class="dib b">Div:</dt>
+                    <dd class="dib ml0 gray">Division Record</dd>
+                  </dl> -->
+                </div>
+
+              </aside>
+
+
+            </div>
+          </div>
+        </article>
+      <!-- </section> -->
+
+
+        <!-- About This Company ---------------------------------------------------------------------------------->
+      <article class="cf ph3 ph5-ns pv6 bg-black-05">
+          <header class="fn fl-ns w-50-ns pr4-ns">
+            <h1 class="mb3 mt0 lh-title">About Infogroup</h1>
+            <div class="f6 ttu tracked gray">Data and Marketing Services</div>
+          </header>
+          <div class="fn fl-ns w-50-ns">
+            <p class="lh-copy measure mt4 mt0-ns f3 fw3">
+              Infogroup is a provider of data and data-driven marketing services, based in Omaha, NE.
+            </p>
+            <p class="lh-copy measure">
+              InfoUSA and Salesgenie are divisions of Infogroup. They are SaaS products providing B2B marketing data to small and medium businesses.
+            </p>
+          </div>
+        </article>
+
+        <!-- 2 x 2 images ---------------------------------------------------------------------------------->
+        <article class="pa3 pa5-ns cf black-80 bg-black-05">
+          <h2>Dual Business Applications</h2>
+          <p class="f4 fw3 measure lh-copy">
+            On multiple projects, I contributed to the design and user experience of both InfoUSA and Salesgenie.
+          </p>
+          <!-- <p class="f4 fw4 measure lh-copy">
+            InfoUSA is targeted to businesses who need to buy one or two lists at a time. Salesgenie is subscription, only.
+          </p> -->
+          <div class="f5 lh-copy">
+            <div class="fl w-100-m w-50-ns pr2-ns mb4-ns pr0-m pr4-ns">
+              <img class="shadow-5"
+                   srcset="../img/infousa-320w.jpg 320w,
+                           ../img/infousa-480w.jpg 480w,
+                           ../img/infousa.jpg"
+                   sizes="(max-width: 320px) 280px,
+                          (max-width: 480px) 440px,
+                          800px"
+                   src="../img/infousa.jpg"
+                   alt="Image of adorama.com shows common design system">
+              <p>
+                <span class="fw6">InfoUSA</span>
+                <br class="dn db">
+                <small class="fw5">infousa.com</small>
+              </p>
+              <p class="measure">Target audience: This product is for businesses that need to buy one or two lists at a time.</p>
+            </div>
+            <div class="fl w-100-m w-50-ns mb4-ns pl0-m pl4-ns">
+              <img class="shadow-5"
+
+                   srcset="../img/salesgenie-320w.jpg 320w,
+                           ../img/salesgenie-480w.jpg 480w,
+                           ../img/salesgenie.jpg"
+                   sizes="(max-width: 320px) 280px,
+                          (max-width: 480px) 440px,
+                          800px"
+                   src="../img/salesgenie.jpg"
+                   alt="Image of adoramarentals.com shows common design system"/>
+              <p>
+                <span class="fw6">Salesgenie</span>
+                <br class="dn db">
+                <small class="fw5">salesgenie.com</small>
+              </p>
+              <p class="measure">Target audience: Salesgenie is for businesses needing regular access to marketing data. Salesgenie is a subscription-only product.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="pa3 pa5-ns cf black-80 bg-dark-green washed-blue">
+          <header class="fn fl-ns  w-100-m w-50-ns pr4-ns">
+            <h2 class="mb3 mt0 lh-title">In one project, I redesigned the email marketing design tools to help users build attractive email templates without technical or design knowledge.
+            </h2>
+          </header>
+          <div class="fn fl-ns w-100-m w-50-ns measure-wide lh-copy">
+            <h4 class="f6 washed-green m.id-gray lh-title">
+             Problem
+            </h4>
+            <p>
+              Clumsy tools led to customer designs that lacked nuance and hurt the Infogroup brand.
+            </p>
+            <h4 class="f6 white m.id-gray lh-title">
+             Strategy
+            </h4>
+            <p>
+              Fix an email marketing tool that didn’t do its best for customers. The idea was to create tools that didn’t require design skill or technical knowledge.
+            </p>
+            <p>
+              In my design explorations, I borrowed design patterns from competitors, especially if they included a mailing list.
+            </p>
+            <h4 class="f6 white m.id-gray lh-title">
+             Actions
+            </h4>
+            <p>
+              The workflow and the framework of the email builder were rebuilt to progressively add to an email template. I created an updated template gallery and new UI elements, to help users easily create an email template.
+            </p>
+          </div>
+        </article>
+
+
+        <!-- Set Up Your Email ---------------------------------------------------------------------------------->
+        <article class="cf pa3 mw9 center bg-washed-blue dark-green">
+          <header class="fl w-100 w-50-l pa3-m pa4-l mb3 mb5-l">
+            <h2 class="lh-title f3 b mt0">
+              Setting Up Your Email Template
+            </h2>
+          </header>
+          <section class="fl w-100">
+
+            <div class="fl w-100 w-50-m w-25-l pa3-m pa4-l">
+              <p class="f6 lh-copy measure">
+                <span class="fw6 f4 db">1. Gallery</span>
+                Users start their email design by selecting a template from the gallery. Templates are organized by industry and type.
+
+              </p>
+            </div>
+            <div class="fl w-100 w-50-m w-25-l pa3-m pa4-l">
+              <p class="f6 lh-copy measure">
+                <span class="fw6 f4 db">2. Customize layout</span>
+                In this step, the layout could be further refined by rearranging or removing content modules, using a drag-and-drop user interaction.
+              </p>
+            </div>
+            <div class="fl w-100 w-50-m w-25-l pa3-m pa4-l">
+              <p class="f6 lh-copy measure">
+                <span class="fw6 f4 db">3. Select color theme</span>
+                The colors are selected in coordinated palettes that always complemented each other.
+              </p>
+            </div>
+            <div class="fl w-100 w-50-m w-25-l pa3-m pa4-l">
+              <p class="f6 lh-copy measure">
+                <span class="fw6 f4 db">4. Add content</span>
+                To customize content, simply click and edit with context menus.
+              </p>
+            </div>
+          </section>
+          <section class="fl w-100">
+            <!-- r1 / c1 -->
+            <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
+              <div class="aspect-ratio aspect-ratio--3x4">
+                <span style="background-image:url(http://placekitten.com/400/400);" class="cover bg-center aspect-ratio--object"></span>
+              </div>
+            </div>
+
+            <!-- r1 / c2 -->
+            <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
+              <div class="aspect-ratio aspect-ratio--3x4">
+                <span style="background-image:url(http://placekitten.com/620/400);" class="cover bg-center aspect-ratio--object"></span>
+              </div>
+            </div>
+
+            <!-- r1 / c3 -->
+            <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
+              <div class="aspect-ratio aspect-ratio--3x4">
+                <span style="background-image:url(http://placekitten.com/620/700);" class="cover bg-center aspect-ratio--object"></span>
+              </div>
+            </div>
+
+            <!-- r1 / c4 -->
+            <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
+              <div class="aspect-ratio aspect-ratio--3x4">
+                <span style="background-image:url(http://placekitten.com/600/400);" class="cover bg-center aspect-ratio--object"></span>
+              </div>
+            </div>
+
+            <!-- r2 / c1 -->
+            <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
+              <div class="aspect-ratio aspect-ratio--3x4">
+                <span style="background-image:url(http://placebear.com/600/400);" class="cover bg-center aspect-ratio--object"></span>
+              </div>
+            </div>
+            <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
+              <div class="aspect-ratio aspect-ratio--3x4">
+                <span style="background-image:url(http://placebear.com/900/300);" class="cover bg-center aspect-ratio--object"></span>
+              </div>
+            </div>
+            <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
+              <div class="aspect-ratio aspect-ratio--3x4">
+                <span style="background-image:url(http://placebear.com/500/250);" class="cover bg-center aspect-ratio--object"></span>
+              </div>
+            </div>
+            <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
+              <div class="aspect-ratio aspect-ratio--3x4">
+                <span style="background-image:url(http://placebear.com/200/700);" class="cover bg-center aspect-ratio--object"></span>
+              </div>
+            </div>
+
+            <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
+              <div class="aspect-ratio aspect-ratio--3x4">
+                <span style="background-image:url(http://mrmrs.github.io/images/0004.jpg);" class="cover bg-center aspect-ratio--object"></span>
+              </div>
+            </div>
+            <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
+              <div class="aspect-ratio aspect-ratio--3x4">
+                <span style="background-image:url(http://mrmrs.github.io/images/0002.jpg);" class="cover bg-center aspect-ratio--object"></span>
+              </div>
+            </div>
+            <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
+              <div class="aspect-ratio aspect-ratio--3x4">
+                <span style="background-image:url(http://mrmrs.github.io/images/0020.jpg);" class="cover bg-center aspect-ratio--object"></span>
+              </div>
+            </div>
+            <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
+              <div class="aspect-ratio aspect-ratio--3x4">
+                <span style="background-image:url(http://mrmrs.github.io/images/0013.jpg);" class="cover bg-center aspect-ratio--object"></span>
+              </div>
+            </div>
+          </section>
+        </article>
+    </main>
+
+    <!-- FOOTER   ---------------------------------------------------------------------------------->
+    <footer class="ph3 ph4-ns pv5 bt white-90 bg-black-80">
+      <h4 class="f3" id="About">Allison Walker - MPS, MSI </h4>
+      <!-- <p class="fw4 lh-copy ttu white-70"><small>Graduate of <a class="white dim fw6" href = "https://tisch.nyu.edu/itp">ITP</a>, <a class="white dim fw6" href="https://www.si.umich.edu/">SI</a>, and <a class="white dim fw6" href="https://ccm.uc.edu/">CCM</a>.</small></p> -->
+
+      <p class="f6 fw4 lh-copy measure-wide">I use best practices of web usability and design to create interactive experiences that provide value for users.</p>
+      <p class="f6 measure pt3"><i class="em em-raised_hand_with_fingers_splayed"></i>  Connect with me on <a href="https://linkedin.com/in/alliwalk" class="white fw6 dim">LinkedIn</a> or send an email. </p>
+
+      <p class="fw7 pt3 f5 f3-ns measure light-blue connect"></p>
+
+
+      <div class="mt5 mb2 f6">
+        <a class="white-70 fw6 ttu no-underline pb1 bb mv3" href="#home">Top &#8657;</a>
+      </div>
+      <div class="mt3 mb2 f6">
+        <small class="white-50">Created by me with Tachyons.io and BrowserSync. <i class="em em-computer"></i> &nbsp; <br class="db">I may collect site usage analytics to help me optimize the content. <i class="em em-bar_chart"></i></small>
+
+        <p class="f6 db b ttu lh-solid white-30">© 2019 Allison Walker</p>
+      </div>
+    </footer>
+
+  </body>
+</html>

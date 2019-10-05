@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
+    <!-- Not that much extra CSS for an external file -->
      <style>
        /* Adds email address outside the DOM */
        .connect::after{ content: " hello@alliwalk.com"; }
@@ -24,6 +25,12 @@
        .light-tan {color: #EFEDE7;}
        .bg-light-tan {background-color: #EFEDE7;}
        .b--light-tan {border-color: #EFEDE7;}
+
+       /* CSS-only smooth-scroll from https://gomakethings.com/smooth-scrolling-links-with-only-css/ */
+      html { scroll-behavior: smooth;  }
+      @media screen and (prefers-reduced-motion: reduce) {
+      	html { scroll-behavior: auto }
+      }
     </style>
 
   </head>
@@ -32,9 +39,9 @@
 
     <!-- Nav ---------------------------------------------------------------------------------->
     <nav class="pa3 pa4-ns bg-white">
-      <a class="link dim near-black b f6 f5-ns dib mr3" href="" title="Home">Allison Walker NYC</a>
-      <a class="dim near-black f6 f5-ns dib mr3 no-underline bb pb1" href="about.html" title="About">About</a>
-      <a class="dim near-black f6 f5-ns dib mr3 no-underline bb pb1" href="#" title="Blog">Writing</a>
+      <a class="link dim near-black b f6 f5-ns dib mr3" id="home" title="Home">Allison Walker NYC</a>
+      <a class="dim near-black f6 f5-ns dib mr3 no-underline bb pb1" href="#About" title="About">About &#8659;</a>
+      <a class="dim near-black f6 f5-ns dib mr3 no-underline bb pb1" href="https://alliwalk.com/blog" title="Blog">Writing &#8663;</a>
       <p class="b f7 f5-ns black-70 dib fr-l connect"></p>
     </nav>
 
@@ -46,18 +53,18 @@
         <!-- Title section -->
         <div class="fl pa3 pa4-ns light-red bg-white-60 measure-narrow f3">
           <header class="bb b--light-gray pv4 ph3 ntm2 bg-white-90">
-            <h1 class="f2 fw7 lh-title mt0 mb3">Creating Design Tools for Small Businesses</h1>
-            <small class="f6 fw4 lh-title mt0 ">NYC</small>
+            <h1 class="f2 fw7 lh-title mt1 mb3">Creating Design Tools for Small Business and Enterprise</h1>
+            <!-- <small class="f6 fw4 lh-title mt0 ">NYC</small> -->
           </header>
           <!-- Project details -->
           <aside class="pt4 pb4 bg-white-90 ph3">
             <p class="lh-copy measure f5 mt0 mid-gray">
-              As a product designer at Infogroup, I developed the user experience for products used by small and medium businesses to acquire and market to new customers.
+              As a product designer at Infogroup, I developed the user experience for products used by small businesses and enterprise, to acquire and market to new customers.
             </p>
             <div class="pv,2 p,l3-ns pt2-ns p,b5-ns">
               <dl class="f6 lh-title mv2">
                 <dt class="dib b mid-gray">Type:</dt>
-                <dd class="dib ml0 gray">Business application, SaaS, B2B</dd>
+                <dd class="dib ml0 gray">Business application, SaaS</dd>
               </dl>
               <dl class="f6 lh-title mv2">
                 <dt class="dib b mid-gray">Role:</dt>
@@ -69,7 +76,7 @@
               </dl>
               <dl class="f6 lh-title mv2">
                 <dt class="dib b mid-gray">Year:</dt>
-                <dd class="dib ml0 gray">2014-2015</dd>
+                <dd class="dib ml0 gray">2014-2015, NYC</dd>
               </dl>
             </div>
           </aside>
@@ -79,13 +86,13 @@
 
     <!-- About Company ------------------------------------------------------------------------>
     <article class="cf ph3 ph5-ns pv5">
-        <header class="fn fl-ns w-50-ns pr4-ns">
-          <h1 class="mb3 mt0 lh-title black-80">About Infogroup</h1>
-          <div class="f6 ttu tracked gray">Data and Marketing Services</div>
+        <header class="fn fl-ns w-100-m w-50-ns pr4-ns">
+          <h1 class="mb3 mt0 lh-title">About Infogroup</h1>
+          <div class="f6 ttu tracked gray lh-copy">Data and Marketing Services</div>
         </header>
-        <div class="fn fl-ns w-50-ns">
-          <p class="lh-copy measure mt4 mt0-ns f3 fw3">
-            Infogroup is a provider of data and data-driven marketing services, based in Omaha, NE.
+        <div class="fn fl-ns w-100-m w-50-ns">
+          <p class="lh-copy measure mt4 mt3-m mt0-ns f3 fw3">
+            Infogroup is a provider of data and data-driven marketing services, based in Dallas, TX.
           </p>
           <p class="lh-copy measure">
             The InfoUSA and Salesgenie divisions of Infogroup represent SaaS products that provide B2B marketing data and services to small and medium businesses.
@@ -101,7 +108,7 @@
         </p>
         <div class="f5 lh-copy">
           <div class="fl w-100-m w-50-ns pr2-ns mb4-ns pr0-m pr4-ns">
-            <img class="shadow-5"
+            <img
                  srcset="../img/infousa-320w.jpg 320w,
                          ../img/infousa-480w.jpg 480w,
                          ../img/infousa.jpg"
@@ -118,8 +125,7 @@
             <p class="measure">Target audience: This product is for businesses that need to buy one or two lists at a time.</p>
           </div>
           <div class="fl w-100-m w-50-ns mb4-ns pl0-m pl4-ns">
-            <img class="shadow-5"
-
+            <img
                  srcset="../img/salesgenie-320w.jpg 320w,
                          ../img/salesgenie-480w.jpg 480w,
                          ../img/salesgenie.jpg"

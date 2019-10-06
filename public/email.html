@@ -16,8 +16,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
 
-    <!-- Not that much extra CSS for an external file -->
+    <!-- Not that much extra CSS for an external file, -ish -->
      <style>
        /* Adds email address outside the DOM */
        .connect::after{ content: " hello@alliwalk.com"; }
@@ -32,8 +33,6 @@
       	html { scroll-behavior: auto }
       }
 
-      @import inter.css;
-
       .inter{ font-family: 'Inter',
               -apple-system, BlinkMacSystemFont,
                'avenir next', avenir,
@@ -47,7 +46,7 @@
 
   </head>
 
-  <body class="sans-serif">
+  <body class="inter">
 
     <header>
       <!--
@@ -59,7 +58,7 @@
         <a class="link dim near-black b f6 f5-ns dib mr3 no-underline bb pb1" href="../email.html" id="home" title="Home">Allison Walker NYC</a>
         <a class="dim near-black f6 f5-ns dib mr3 no-underline bb pb1" href="#About" title="About">About &#8659;</a>
         <a class="dim near-black f6 f5-ns dib mr3 no-underline bb pb1" href="https://alliwalk.com/blog" title="Blog">Writing &#8663;</a>
-        <p class="b f7 f5-ns black-70 dib fr-l connect"></p>
+        <p class="b f7 f5-ns black-60 dib fr-l connect"></p>
       </nav>
       <!--
 
@@ -68,12 +67,11 @@
       -->
       <article data-name="article-full-bleed-background">
       <!-- Header Image -->
-      <div class="cf  b--light-tan" style="background: url(img/email-img/bg11.jpg) no-repeat center center fixed; background-size: cover;">
+      <div class="cf" style="background: url(img/bg11.jpg) no-repeat center center fixed; background-size: cover;">
         <!-- Title section -->
         <div class="fl pa3 pa4-ns light-red bg-white-60 measure-narrow f3">
-          <header class="bb b--light-gray pv4 ph3 ntm2 bg-white-90">
+          <header class="bb b--light-gray pa4 ntm2 bg-white-90">
             <h1 class="f2 fw7 lh-title mt1 mb3">Creating Design Tools for Small Business and Enterprise</h1>
-            <!-- <small class="f6 fw4 lh-title mt0 ">NYC</small> -->
           </header>
           <!-- Project details -->
           <aside class="pt4 pb4 bg-white-90 ph3 ph4-ns">
